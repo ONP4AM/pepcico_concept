@@ -1,0 +1,54 @@
+  .fucku{ position: absolute;
+    top: 200vh;
+    width:98.90vw;
+   
+    left: 0px;
+  .mySwiper{
+      height:50vh;
+          width: 98.90vw;
+      .slide{
+          display:flex;
+          justify-content: center;
+          background-color: #0062b3;
+          align-items: center;
+        &.slide:nth-child(2){
+          background-color:rgb(226, 230, 219);
+        }
+        &.slide:nth-child(3){
+          background-color:#1e1e1e;
+        }
+          .slider-img{
+              height:400px;
+              width: 200px;
+              position: relative;
+              display:flex;
+              justify-content: center;
+              align-items: center;
+              
+              img{
+                height:320px;
+                width: 170px;
+              }
+          }
+          .slider-detail{
+            height:50px;
+            width: 200px;
+            h2{
+                font-size: 32px;
+                color:aqua;
+            }
+          }
+
+      }
+  }
+
+  }
+.hide{ 
+  position: absolute;
+    top: 0vh;
+    //height:50vh;
+    width: 98.90vw;
+    display:flex;
+    left: 0px;z-index: 10;
+    background-color:#C9002B;
+}

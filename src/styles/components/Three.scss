@@ -1,0 +1,249 @@
+.products {
+  height: 50vh;
+  height: calc(var(--vh, 1vh) * 50);
+  .svg-wave{
+    display:flex;
+    position: absolute;
+    width:100vw;
+    top: 270px;
+    @include media("<=tablet") {
+      top: 350px;
+    }    
+  .waves {
+    position:relative;
+    width: 150%;
+    height:15vh;
+   // margin-bottom:-7px; /*Fix for safari gap*/
+    min-height:100px;
+    max-height:150px;
+    @include media("<=tablet") {
+      min-height:50px;
+      max-height: 70px;
+    }       
+      .parallax > use {
+      animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+      }
+      .parallax > use:nth-child(1) {
+      animation-delay: -2s;
+      animation-duration: 7s;
+      }
+      .parallax > use:nth-child(2) {
+      animation-delay: -3s;
+      animation-duration: 10s;
+      }
+      .parallax > use:nth-child(3) {
+      animation-delay: -4s;
+      animation-duration: 13s;
+      }
+      .parallax > use:nth-child(4) {
+      animation-delay: -5s;
+      animation-duration: 20s;
+      }
+      @keyframes move-forever {
+      0% {
+      transform: translate3d(-90px,0,0);
+      }
+      100% { 
+      transform: translate3d(85px,0,0);
+      }
+      }
+        }
+      }
+  .products-navigation {
+
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 6;
+    display: none;
+    padding: 32px;
+    box-sizing: border-box;
+    @include media("<=tablet") {
+      display: none;
+    }
+    .products-arrow {
+      background: rgba(0, 0, 0, 0.4);
+      height: 72px;
+      width: 72px;
+      border-radius: 100%;
+      opacity: 0;      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      svg {
+        color: $white;
+        height: 28px;
+        width: 28px;
+      }
+      &.disabled {
+        opacity: 0.3;
+      }
+    }
+  }
+  .row {
+    @include media("<=tablet") {
+      flex-direction: column;
+    
+    }
+    .product {
+      position: relative;
+      background: $white;
+      cursor: pointer;
+      @include media("<=tablet") {
+        min-height: 500px;
+        
+      
+      }      
+
+
+
+      &:hover {
+        .product-image {
+          opacity: 0.7;
+        }
+      }
+      .product-details {
+        //width: 33.3333vw;
+        width : 32.966vw;
+        //height: 50vh;
+        
+
+        //height: calc(var(--vh, 1vh) * 50);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+        box-sizing: border-box;
+        z-index: 1;
+        position: relative;
+        left:0;
+        @include media("<=tablet") {
+          width: 100vw;
+          
+        }
+        @include media("<=phone") {
+          padding: 16px;
+        }
+        span {
+          margin-top: 156px;
+          font-size: 1.6rem;
+          opacity: 1;
+          display:none;
+          color: $black;
+          font-weight: 600;
+          @include media("<=desktop", ">tablet") {
+            font-size: 1.4rem;
+          }
+          @include media("<=phone") {
+            font-size: 1.2rem;
+            line-height: 2.2rem;
+          }
+        }
+        
+        h2 {
+          font-size: 2.4rem;
+          line-height: 3.4rem;
+          width: 85%;
+          margin-top: 16px;
+          position: relative;
+          bottom:-200px;
+          left: -100px;
+          transform: rotate(90deg);
+          transform-origin: top;
+          color: $white;
+          font-family: "Franklin Gothic Medium";
+          @include media("<=desktop", ">tablet") {
+            font-size: 2rem;
+            line-height: 2.4rem;
+          
+            
+          }
+          @include media("<=phone") {
+            font-size: 2rem;
+            line-height: 2.2rem;
+            margin-top: 5px;
+            
+            left:0px;
+            top:0px;
+            
+            transform: rotate(360deg);
+          }
+          
+        }
+      }
+      .product-image {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: absolute;
+        opacity: 1;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.4s cubic-bezier(0.6, -0.05, 0.1, 0.99);
+        
+        img {
+          height: 300px;
+          width: 240px;
+          margin: 50px;
+          object-fit: contain;
+          @include media("<=tablet") {
+            height:70%;
+            width: 70%;
+            margin:0;
+          }  
+        
+
+        
+        }
+      }
+    }
+  }
+}
+
+.products {
+  .container-fluid{
+    .row {
+      .product:nth-child(1){
+
+        background-color:#0062b3;
+        
+      }
+      .product:nth-child(2){
+
+        background-color: rgb(226, 230, 219);
+      }
+      .product:nth-child(3){
+
+        background-color:#1e1e1e;
+      }
+
+    }
+    }
+  
+}
+
+.products {
+  .container-fluid{
+    .row {
+      .product {
+        .product-details{
+          .diet {
+            color: #0062b3;
+          }
+        }
+      }
+    }
+    }
+  
+}
+
+.diet {
+  color:#0062b3;
+}
+
