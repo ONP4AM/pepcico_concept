@@ -5,7 +5,7 @@
     display:flex;
     position: absolute;
     width:100vw;
-    top: 270px;
+    top: 420px;
     @include media("<=tablet") {
       top: 350px;
     }    
@@ -235,6 +235,8 @@
         .product-details{
           .diet {
             color: #0062b3;
+            position: relative;
+    
           }
         }
       }

@@ -6,8 +6,7 @@
 
   overflow:hidden;
   width: 98.90vw;
-  
-  //background: url('https://www.pepsi.com/en-us/uploads/images/pepsi-mango/mango-bg.jpg');
+  //background: url('https://bemysocial.com/wp-content/plugins/phastpress/phast.php/c2VydmljZT1pbWFnZXMmc3JjPWh0dHBzJTNBJTJGJTJGYmVteXNvY2lhbC5jb20lMkZ3cC1jb250ZW50JTJGdXBsb2FkcyUyRjIwMjElMkYxMCUyRmFsYmVydG8tZ29uemFsZXotU3I1RzNwSG1McjgtdW5zcGxhc2guanBnJmNhY2hlTWFya2VyPTE2ODkwNzI5NzMtNTQ3NDA1JnRva2VuPWI3YzJkYjM5NzQ4OGYzNGQ.q.jpg');
   video{
     position:absolute;
     top: 0px;
@@ -24,7 +23,7 @@
     .pepsi-bottol{
       position: absolute;
       right: 150px;
-      top: 50px;
+      top: 150px;
       height:400px;
       width:300px;
       @include media("<=tablet") {

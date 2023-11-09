@@ -52,8 +52,10 @@ class ZeroSugerPe extends React.Component {
         "suger":["0",
                  "40",
                 "0"   ],
-        "background":["white","#0062b1","black"]
+        "background":["white","#0062b1","black"],
+        "color":["white","#0062b1","white"]
       }
+      
     ],
     index: 0
   };
@@ -78,11 +80,11 @@ class ZeroSugerPe extends React.Component {
     const {products, index} = this.state;
   return (
     <div className='page'>
-      <div className='container'>
+      <div className='container' >
        
         <div className='row'>
         {products.map(item =>(
-          <div className='product-details'
+          <div className='product-details' 
           key={item._id}
           style={{backgroundColor:item.background[index] }}
           > 
@@ -91,7 +93,7 @@ class ZeroSugerPe extends React.Component {
             <div className='pepsi-circle'></div>
             <motion.div 
 
-            initial={{y:310 , x:840 ,scale:0.8}}
+            initial={{y:540 , x:798 ,scale:1}}
             animate ={{
               transition: { delay: 0.2, ...transition },
               y:0 ,x:0,scale:1,
@@ -173,8 +175,8 @@ class ZeroSugerPe extends React.Component {
                    opacity:1,
                    y:0
                  }}>
-              <div className="detail-thumb">
-                <DetailsThumb  images={item.src} tab={this.handleTab} myRef={this.myRef} />
+              <div className="detail-thumb" style={{backgroundColor:item.background[index] }} >
+                <DetailsThumb     images={item.src} tab={this.handleTab} myRef={this.myRef} />
               </div>
               </motion.div>
             </div>
