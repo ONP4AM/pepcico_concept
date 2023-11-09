@@ -5,8 +5,7 @@ This is a concept website for Pepsi, built using React and animation libraries G
 **Please note that this project is currently not mobile-friendly. I will be working on improving the mobile responsiveness in the future.**
 ## Features
 
-- Built using React, making it a modern and dynamic website.
+- Built using React.
 - Utilizes animation libraries like GSAP and Framer Motion for impressive animations.
 - Ongoing development to improve mobile responsiveness and add more features.
 
-## I
